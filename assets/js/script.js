@@ -32,7 +32,7 @@ function checkInput() {
 
   if (passwordValue === "") {
     setErrorFor(password, "Password is required");
-  } else if (passwordValue.length < 7) {
+  } else if (passwordValue.length < 8) {
     setErrorFor(password, "Password must be at least 8 digits long");
   } else {
     setSuccessrFor(password);
@@ -53,7 +53,7 @@ function checkInput() {
   });
 
   if (formIsValid) {
-    console.log("Formulário válido!");
+    console.log("Form is valid!");
   }
 }
 
