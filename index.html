@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form With Validation</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-    
-
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <section id="container">
-        <form id="form">
-            <input type="text" id="name" placeholder="Name" autocomplete="off" required>
-            <input type="email" id="email" placeholder="E-mail" autocomplete="off" required>
-            <input type="subject" id="subject" placeholder="Subject" autocomplete="off" required>
-            <textarea id="msg" rows="4" placeholder="Text here..." autocomplete="off" required></textarea>
-            <button id="submit">Submit</button>
-        </form>
+      <form id="form">
+        <div class="form-control">
+          <input type="text" id="name" placeholder="Name" />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <i class="fa-solid fa-circle-check"></i>
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <input type="email" id="email" placeholder="Email" />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <i class="fa-solid fa-circle-check"></i>
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <input type="password" id="password" placeholder="Password" />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <i class="fa-solid fa-circle-check"></i>
+          <small></small>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Confim Password"
+          />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <i class="fa-solid fa-circle-check"></i>
+          <small></small>
+        </div>
+
+        <button id="submit">Submit</button>
+      </form>
     </section>
 
     <script src="assets/js/script.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/b7ec0e5ac0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
